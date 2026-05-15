@@ -10,14 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc6a1429afb198246b301c1f4e2363df, type: 3}
-  m_Name: God_Intro_Accept_2
+  m_Name: End_19
   m_EditorClassIdentifier: Assembly-CSharp::DialogNode
-  NodeID: God_Intro_Accept_2
-  SpeakerName: God
-  DialogText: Make him gaze...
+  NodeID: End_19
+  SpeakerName: Simo
+  DialogText: I trust you... Whoever you are... What should I do?
   Choices:
-  - ChoiceText: '[i want to begin]'
-    NextNodeID: Simo_Start_1
+  - ChoiceText: '[pull the tarp and gaze]'
+    NextNodeID: End_Gaze_1
+    ReloadScene: 0
+    RequiredFlags: []
+    ForbiddenFlags: []
+    GrantFlags: []
+  - ChoiceText: '[let go of the tarp]'
+    NextNodeID: End_Not_1
     ReloadScene: 0
     RequiredFlags: []
     ForbiddenFlags: []

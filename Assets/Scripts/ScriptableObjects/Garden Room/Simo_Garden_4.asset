@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc6a1429afb198246b301c1f4e2363df, type: 3}
-  m_Name: God_Intro_Accept_2
+  m_Name: Simo_Garden_4
   m_EditorClassIdentifier: Assembly-CSharp::DialogNode
-  NodeID: God_Intro_Accept_2
-  SpeakerName: God
-  DialogText: Make him gaze...
+  NodeID: Simo_Garden_4
+  SpeakerName: Simo
+  DialogText: What? Is someone there? I don't hear anyone but...
   Choices:
-  - ChoiceText: '[i want to begin]'
-    NextNodeID: Simo_Start_1
+  - ChoiceText: '[...]'
+    NextNodeID: Narrator_Garden_5
     ReloadScene: 0
     RequiredFlags: []
     ForbiddenFlags: []

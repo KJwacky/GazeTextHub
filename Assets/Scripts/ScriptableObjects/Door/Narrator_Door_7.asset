@@ -10,14 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc6a1429afb198246b301c1f4e2363df, type: 3}
-  m_Name: God_Intro_Accept_2
+  m_Name: Narrator_Door_7
   m_EditorClassIdentifier: Assembly-CSharp::DialogNode
-  NodeID: God_Intro_Accept_2
-  SpeakerName: God
-  DialogText: Make him gaze...
+  NodeID: Narrator_Door_7
+  SpeakerName: Narrator
+  DialogText: You see the locked door standing before you... Gods gift lies past
+    it.
   Choices:
-  - ChoiceText: '[i want to begin]'
-    NextNodeID: Simo_Start_1
+  - ChoiceText: '[unlock door]'
+    NextNodeID: End_1
+    ReloadScene: 0
+    RequiredFlags:
+    - Polk_Quest_Complete?
+    - Rald_Quest_Complete?
+    - Shia_Quest_Complete?
+    ForbiddenFlags: []
+    GrantFlags: []
+  - ChoiceText: '[go west]'
+    NextNodeID: Narrator_Garden_5
     ReloadScene: 0
     RequiredFlags: []
     ForbiddenFlags: []

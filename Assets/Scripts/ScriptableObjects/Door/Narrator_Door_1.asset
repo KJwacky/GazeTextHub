@@ -10,15 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc6a1429afb198246b301c1f4e2363df, type: 3}
-  m_Name: God_Intro_Accept_2
+  m_Name: Narrator_Door_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogNode
-  NodeID: God_Intro_Accept_2
-  SpeakerName: God
-  DialogText: Make him gaze...
+  NodeID: Narrator_Door_1
+  SpeakerName: Narrator
+  DialogText: You and Simo hear a deep pulsing. You look up and see a massive door
+    with 3 key holes of sorts.
   Choices:
-  - ChoiceText: '[i want to begin]'
-    NextNodeID: Simo_Start_1
+  - ChoiceText: '[...]'
+    NextNodeID: Simo_Door_2
     ReloadScene: 0
     RequiredFlags: []
+    ForbiddenFlags:
+    - Seen_Door?
+    GrantFlags:
+    - Seen_Door?
+  - ChoiceText: '[...]'
+    NextNodeID: Narrator_Door_7
+    ReloadScene: 0
+    RequiredFlags:
+    - Seen_Door?
     ForbiddenFlags: []
     GrantFlags: []

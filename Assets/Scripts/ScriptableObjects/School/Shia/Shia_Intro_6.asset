@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc6a1429afb198246b301c1f4e2363df, type: 3}
-  m_Name: God_Intro_Accept_2
+  m_Name: Shia_Intro_6
   m_EditorClassIdentifier: Assembly-CSharp::DialogNode
-  NodeID: God_Intro_Accept_2
-  SpeakerName: God
-  DialogText: Make him gaze...
+  NodeID: Shia_Intro_6
+  SpeakerName: Simo
+  DialogText: Yeah... I got stage fright and didn't show up... I still feel so bad
+    about it.
   Choices:
-  - ChoiceText: '[i want to begin]'
-    NextNodeID: Simo_Start_1
+  - ChoiceText: '[...]'
+    NextNodeID: Shia_Intro_7
     ReloadScene: 0
     RequiredFlags: []
     ForbiddenFlags: []

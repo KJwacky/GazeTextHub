@@ -10,14 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc6a1429afb198246b301c1f4e2363df, type: 3}
-  m_Name: God_Intro_Accept_2
+  m_Name: Narrator_Ocean_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogNode
-  NodeID: God_Intro_Accept_2
-  SpeakerName: God
-  DialogText: Make him gaze...
+  NodeID: Narrator_Ocean_1
+  SpeakerName: Narrator
+  DialogText: As you and Simo head east you hear the waves of an ocean crash against
+    the sand.
   Choices:
-  - ChoiceText: '[i want to begin]'
-    NextNodeID: Simo_Start_1
+  - ChoiceText: '[look for peace]'
+    NextNodeID: Narrator_Ocean_2
+    ReloadScene: 0
+    RequiredFlags:
+    - Polk_Quest_Start?
+    ForbiddenFlags:
+    - Polk_Quest_Complete?
+    GrantFlags: []
+  - ChoiceText: '[go west]'
+    NextNodeID: Narrator_Beach_1
     ReloadScene: 0
     RequiredFlags: []
     ForbiddenFlags: []

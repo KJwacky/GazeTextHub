@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6a1429afb198246b301c1f4e2363df, type: 3}
+  m_Name: Narrator_Scary_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogNode
+  NodeID: Narrator_Scary_2
+  SpeakerName: Narrator
+  DialogText: This is not right... Where is Rald? You should come back later I think...
+    Come back when you have the other 2 Peaces of Mind.
+  Choices:
+  - ChoiceText: '[simo please leave]'
+    NextNodeID: Narrator_Street_1
+    ReloadScene: 0
+    RequiredFlags: []
+    ForbiddenFlags: []
+    GrantFlags: []
+  - ChoiceText: '[but i have them]'
+    NextNodeID: Narrator_Scary_3
+    ReloadScene: 0
+    RequiredFlags:
+    - Polk_Quest_Complete?
+    - Shia_Quest_Complete?
+    ForbiddenFlags:
+    - Rald_Quest_Complete?
+    GrantFlags: []
