@@ -2,7 +2,6 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
-using UnityEditor.Rendering;
 
 public class DialogManager : MonoBehaviour
 {
